@@ -155,7 +155,7 @@
     background:var(--ink);color:var(--on-dark);
     padding:96px clamp(20px,6vw,40px) 34px;
     opacity:0;visibility:hidden;transform:translateY(-10px);
-    transition:opacity .34s var(--ease),transform .34s var(--ease),visibility .34s;
+    transition:opacity .34s var(--ease),transform .34s var(--ease),visibility 0s .34s;
     overflow-y:auto;
   }
   .menu::before{
@@ -163,7 +163,7 @@
     background:radial-gradient(60% 45% at 85% 0%,rgba(201,169,106,.16),transparent 70%),
                radial-gradient(50% 40% at 0% 100%,rgba(14,107,84,.24),transparent 70%);
   }
-  body.menu .menu{opacity:1;visibility:visible;transform:none}
+  body.menu .menu{opacity:1;visibility:visible;transform:none;transition:opacity .34s var(--ease),transform .34s var(--ease),visibility 0s}
   .menu-list{position:relative;display:flex;flex-direction:column;margin-top:6px}
   .menu-list a{
     display:flex;align-items:baseline;gap:14px;
