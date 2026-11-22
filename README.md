@@ -1,28 +1,40 @@
-# M. Azhar — Portfolio
+# M. Azhar — Portfolio & Résumé
 
-A single-file, responsive personal site for **M. Azhar**, Sales Manager & Team Lead based in Lahore, Pakistan.
+Personal site and résumé for **M. Azhar**, Sales Manager & Team Lead based in Lahore, Pakistan.
 
-**Live:** https://babyline00.github.io/azhar-portfolio/
+- **Style archive:** https://babyline00.github.io/azhar-portfolio/styles.html
+- **Résumé (PDF):** https://babyline00.github.io/azhar-portfolio/M-Azhar-Resume.pdf
 
-## Highlights
+## Eight complete directions
 
-- Editorial design system — warm paper, deep evergreen ink, brass accent
-- Hero portrait in an arch frame with floating "open to work" badge
-- Animated capability ticker, scroll reveals, active-section navigation
-- Mobile-first: full-screen sheet menu, fluid type, 390px-to-4K layouts
-- Accessibility: reduced-motion support, visible focus states, semantic landmarks
-- Zero build step — everything (CSS, JS, portrait) lives in `index.html`
+| # | Style | Entry | Character |
+|---|-------|-------|-----------|
+| 01 | **Editorial** | `/index.html` | Warm paper, brass accents, Instrument Serif, arch portrait |
+| 02 | **Aurora** | `/aurora/` | Dark glass, WebGL particle sphere + wireframe 3D, gradient neon |
+| 03 | **Monolith** | `/monolith/` | Brutalist, acid lime, hard shadows, rotating 3D cube, flip cards |
+| 04 | **Noir** | `/noir/` | Bodoni editorial, monochrome, 3D photo-card stack |
+| 05 | **Synthwave** | `/synthwave/` | Retro sun, perspective grid floor, chrome type, spinning cube |
+| 06 | **Swiss** | `/swiss/` | Grotesk grid system, red accent, circular portrait, numbered sections |
+| 07 | **Liquid** | `/liquid/` | Soft pastels, morphing blobs, Fraunces serif, floating 3D layers |
+| 08 | **Terminal** | `/terminal/` | Monospace terminal UI, typing effect, matrix rain, ASCII skill bars |
 
-## Sections
+Every direction is a **single self-contained HTML file** with the portrait embedded, fully responsive,
+and respects `prefers-reduced-motion`.
 
-Home · About · Experience · Skills · Education · Contact
+## Résumé
+
+- `M-Azhar-Resume.pdf` — one-page A4 print-ready résumé
+- `resume.html` — the editable source used to generate the PDF
+
+Regenerate the PDF with Chrome:
+
+```bash
+chrome --headless --no-pdf-header-footer \
+  --print-to-pdf=M-Azhar-Resume.pdf resume.html
+```
 
 ## Contact
 
 - Email: azharsain41@gmail.com
 - Skype: azharsain41
 - Location: Shahdi Khui, Lahore, Pakistan
-
-## Local preview
-
-Open `index.html` directly in any modern browser — no server required.
